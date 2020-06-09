@@ -1,2 +1,2 @@
 # magisvintage
-Magis Vintage Repo
+Magis Vintage child theme Repo
