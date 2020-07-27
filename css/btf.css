@@ -438,11 +438,7 @@ footer .social_wrapper ul li{
 /** RESPONSIVE **/
 @media screen and (min-width: 1441px){
 
-  .blocco_container .blocco_wrapper {
-    padding: 2rem 3rem;
-    font-size: 1.4rem;
-    line-height: 1.4;
-  }
+
 }
 @media screen and (max-width: 1440px) and (min-width: 768px){
   #video{
@@ -471,6 +467,11 @@ footer .social_wrapper ul li{
   }
   #form .container{
     grid-template-columns: repeat(1, 2fr 3fr);
+  }
+    .blocco_container .blocco_wrapper {
+    padding: 2rem 3rem;
+    font-size: 1.4rem;
+    line-height: 1.4;
   }
   .blocco_container {
     grid-template-columns: repeat(2, 1fr);
