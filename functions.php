@@ -202,7 +202,7 @@ function my_set_image_meta_upon_image_upload( $post_ID ) {
 // remove sidebar
 add_action( 'get_header', 'remove_storefront_sidebar' );
 function remove_storefront_sidebar() {
-	if ( is_cart() || is_checkout() || is_product_category()) {
+	if ( is_cart() || is_checkout() || is_product_category() || is_account_page()) {
 		remove_action( 'storefront_sidebar', 'storefront_get_sidebar', 10 );
 	}
 }
