@@ -1,0 +1,596 @@
+
+#collezioni .cat_wrapper{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+#collezioni h2{
+  text-align: center;
+  margin: 3rem 0 1rem;
+}
+/******************
+ PRODOTTI
+*/
+#prodotti{
+  padding: 3rem 0;
+  text-align: center;
+}
+#prodotti .wrapper{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 1rem;
+}
+#prodotti .wrapper figure{
+  display:block;
+}
+/* #prodotti_carousel{
+  width:100%;  
+} */
+#prodotti h2{
+  margin-bottom: 1rem;
+}
+#prodotti ul{
+  list-style:none;
+}
+#prodotti li figure{
+  width:100%;
+}
+#prodotti .img_wrapper{
+  padding:140% 0 0 0;
+}
+#prodotti .img_wrapper img{
+  height: 100%;
+  width: auto;
+  max-width: none;
+}
+#prodotti .img_wrapper.placeholder{
+  padding: 40% 0 0 0;
+}
+#prodotti .img_wrapper.placeholder img{
+  height: auto;
+}
+#prodotti .wrapper_images{
+  border-bottom:1px solid #000;
+}
+#prodotti figcaption h4{
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1rem 0 0.5rem;
+}
+#prodotti .price{
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0 0 0;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+#prodotti .button{
+  font-size: 1em;
+}
+#prodotti figure:hover img{
+  height: 105%
+}
+#prodotti figure:hover .button{
+  background-color: #d5d5d5;
+  border-color: #d5d5d5;
+}
+/* #prodotti .carousel-control{
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000;
+  width: inherit;
+} */
+/* 
+#prodotti .carousel-control-prev-icon{
+  background-image: url('../../../../images/prev-icon.png');
+}
+#prodotti .carousel-control-next-icon{
+  background-image: url('../../../../images/next-icon.png');
+} */
+.product_category_loop a{
+    font-weight: normal;
+    font-style: italic;
+    color: #000;
+    font-size: 0.8rem;
+}
+
+#collezioni figure{
+  width:100%;
+  position:relative;
+}
+#collezioni figure figcaption{
+  text-align:center;
+}
+#collezioni figure h3{
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3rem;
+}
+#collezioni figure a.btn,
+.tax-product_cat .subcat_cta{
+  border:1px solid #fff;
+  color:#fff;
+  font-family: 'doctor_jekyll_nfregular' !important;
+}
+.tax-product_cat .subcat_cta{
+    top: 65%;
+}
+.tax-product_cat li:hover .subcat_cta,
+#collezioni figure:hover a.btn {
+  background:#fff;
+  border-color:transparent;
+  color:#000;
+}
+#collezioni figure:hover .cover{
+    background: rgba(0, 0, 0, 0.2);
+}
+#collezioni .img_wrapper{
+  padding:56.7% 0 0 0;
+  padding:100% 0 0 0;
+}
+#collezioni .img_wrapper img{
+  width:100%;
+  height:auto;
+  max-width:none;
+}
+.tax-product_cat li:hover img{
+  height:105% !important;
+  width:auto;
+}
+#collezioni figure:hover img{
+  width:105%;
+  height:auto;
+}
+#kipekee{
+    background: #f68f35;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    position: relative;
+}
+#kipekee a{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+#kipekee h2{
+    margin: 0;
+    color: #000;
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#kipekee h2 span{
+    display: block;
+    font-size: 1.92rem;
+    font-weight: 800;
+}
+
+/*******************
+  ABOUT
+*/
+
+.blocco_container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-auto-rows: minmax(60vh,auto);
+}
+
+.blocco_container>* {
+    flex-basis: 50%;
+}
+.blocco_container .blocco_wrapper {
+    padding: 2rem 3rem;
+    color: #000;
+}
+.blocco_container .img_wrapper{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+footer#colophon{
+  background: #1d1b26;
+  background: #e4e4e4;
+  color: #333333;
+  padding: 2rem 0;
+  font-family: 'doctor_jekyll_nfregular' !important;
+}
+footer#colophon a{
+  font-weight: normal;
+  font-family: 'doctor_jekyll_nfregular' !important;
+}
+footer#colophon h4{
+  /* color: #fff; */
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: 'doctor_jekyll_nfregular' !important;
+}
+#footer_sections .wrapper{
+  display: grid;
+  align-items: flex-start;
+  justify-content: space-between;
+  grid-gap: 1rem;
+}
+#footer_sections .wrapper p{
+  margin-bottom:0;
+}
+.footer__wrapper ul.social{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.footer__wrapper ul.social li{
+  padding: 0 1rem 0 0;
+}
+
+/********************************
+  SLIDING SEARCH MENU
+*/
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  width: 0;
+  height: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    overflow:hidden;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 1rem;
+  font-size: 3rem !important;
+  color: #fff !important;
+  display: block; /* Display block instead of inline */
+   /* display: table; 
+ justify-content: flex-end;
+  display:flex;
+  overflow:hidden; */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color:yellow !important;
+  cursor:pointer;
+}
+
+/* Position the close button (top right corner) */
+.overlay #closebtn {
+  position: absolute;
+  top: 50px;
+  left: 45px;
+  font-size: 60px;
+  padding:0;
+}
+
+#video{
+    background: #1d1b26;
+}
+
+footer .social_wrapper{
+      display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 3rem;
+}
+footer .social_wrapper h4{
+    margin: 0 2rem 0 0;
+}
+footer .social_wrapper ul{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .social_wrapper ul li{
+  padding:0 0.5rem 0 0;
+}
+
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    background-color: #DDD;
+    color: #555;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+#back2Top:hover {
+    background-color: #DDF;
+    color: #000;
+}
+
+.page-template-template-fullwidth #primary, .page-template-template-fullwidth #main{
+  margin-bottom:0;
+}
+
+#form{
+  padding: 5rem 0;
+  background: #1d1b26;
+}
+#form .container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-gap:3rem;
+}
+#form h3{
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin:0;
+  color: #fff;
+}
+
+#form form p{
+  margin-bottom:0;
+}
+#form form label, #form form input:not(.wpcf7-submit),#form form textarea{
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    box-shadow: none;
+    outline:none;
+}
+#form .wpcf7-acceptance .wpcf7-list-item{
+  margin:0;
+}
+#form .wpcf7-acceptance label{
+  border:none;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  background: none;
+  color: #fff;
+}
+#form .wpcf7-acceptance label a{
+  color: #fff;
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+#form .wpcf7-acceptance input[type="checkbox"]{
+    width: initial;
+    margin: 0 0.5rem 0 0;
+}
+#form input[type="submit"]{
+  text-transform:uppercase;
+    color: #fff;
+    background-color: #fd2d55;
+    border-color: #fd2d55;
+    border-radius: .3125rem;
+    transition: all ease-in-out 0.2s;
+    -webkit-transition: all ease-in-out 0.2s;
+    -o-transition: all ease-in-out 0.2s;
+    -ms-transition: all ease-in-out 0.2s;
+    -moz-transition: all ease-in-out 0.2s;
+}
+
+.fullWidth h2{
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color:#000;
+}
+
+.fullWidth h3{
+  /* font-weight: bold; */
+  text-transform: uppercase;
+  font-size: 2rem;
+  color:#000;
+}
+.fullWidth.kipekee .blocco_container{
+  grid-gap: 2rem 0;
+}
+.fullWidth .blocco_wrapper span{
+    font-size: 3rem;
+    font-family: 'doctor_jekyll_nfregular';
+    border: 1px solid;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    line-height: 60px;
+    margin-bottom: 1rem;
+}
+.contatti .blocco_wrapper a{
+    color: #000;
+    font-weight: normal;
+}
+
+#menu-item-215 > a:hover{
+  cursor:auto;
+}
+
+/** RESPONSIVE **/
+@media screen and (min-width: 1441px){
+
+  .blocco_container .blocco_wrapper {
+    padding: 2rem 3rem;
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+}
+@media screen and (max-width: 1440px) and (min-width: 768px){
+  #video{
+      padding: 0rem 15rem;
+  }
+
+}
+@media screen and (min-width: 1200px){
+
+}
+@media screen and (min-width: 1025px){
+
+}
+@media screen and (max-width: 1025px){
+
+}
+@media screen and (max-width: 768px){
+
+}
+@media screen and (min-width: 769px){
+
+}
+@media screen and (min-width: 768px){
+  #form input[type="submit"]{
+    padding: 1rem 2rem;
+  }
+  #form .container{
+    grid-template-columns: repeat(1, 2fr 3fr);
+  }
+  .blocco_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contatti .blocco_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+    #video{
+        padding: 4rem 20rem;
+  }
+  .kipekee .blocco_container{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  #kipekee{
+    height: 40vh;
+}
+  #prodotti .wrapper{
+    grid-template-columns: repeat(5,1fr);
+  }
+  #collezioni .cat_wrapper{
+    grid-template-columns: repeat(3,1fr);
+  }
+  footer#colophon{
+    padding: 5rem 0;
+    line-height: 2;
+  }
+  #footer_sections .wrapper{
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1rem;
+  }
+}
+/* Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+/* Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+/* iPad 1-4 e Mini Portrait */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait){
+
+}
+/* Retina iPad in portrait */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2){
+
+}
+@media (max-width: 767px){
+  #prodotti .wrapper{
+    grid-template-columns: repeat(1,1fr);
+  }
+  #collezioni .cat_wrapper{
+    grid-template-columns: repeat(1,1fr);
+  }
+  #footer_sections .wrapper{
+    grid-template-columns: repeat(1,1fr);
+  }
+  #form .container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+/***** SVG ****/
+
+.custom-shape-divider-video-top,
+.custom-shape-divider-kipekee-top{
+  transform: rotate(180deg);
+}
+.custom-shape-divider-kipekee-top{
+  margin-top: -10rem;
+}
+.custom-shape-divider-kipekee-top .shape-fill {
+    fill: #f68f35;
+}
+
+.custom-shape-divider-kipekee-top svg,
+.custom-shape-divider-video-top svg {
+    position: relative;
+    display: block;
+    width: calc(178% + 1.3px);
+    height: 184px;
+}
+
+.custom-shape-divider-video-top .shape-fill {
+    fill: #1D1B26;
+}
+
+.custom-shape-divider-video-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(178% + 1.3px);
+    height: 184px;
+}
+
+.custom-shape-divider-video-bottom .shape-fill {
+    fill: #1d1b26;
+}
