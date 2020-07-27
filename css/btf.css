@@ -1,4 +1,7 @@
-
+:root {
+  --fontFamily: font-family: 'Poppins', sans-serif;
+  --linkColor: color: #8C8C8C;
+}
 #collezioni .cat_wrapper{
   display: grid;
   align-items: center;
@@ -6,7 +9,8 @@
 }
 #collezioni h2{
   text-align: center;
-  margin: 3rem 0 1rem;
+  margin: 4rem 0 3rem;
+  font-weight: 600;
 }
 /******************
  PRODOTTI
@@ -114,7 +118,7 @@
 .tax-product_cat .subcat_cta{
   border:1px solid #fff;
   color:#fff;
-  font-family: 'doctor_jekyll_nfregular' !important;
+  font-family: var(--fontFamily) !important;
 }
 .tax-product_cat .subcat_cta{
     top: 65%;
@@ -201,18 +205,18 @@ footer#colophon{
   background: #e4e4e4;
   color: #333333;
   padding: 2rem 0;
-  font-family: 'doctor_jekyll_nfregular' !important;
+  font-family: var(--fontFamily) !important;
 }
 footer#colophon a{
   font-weight: normal;
-  font-family: 'doctor_jekyll_nfregular' !important;
+  font-family: var(--fontFamily) !important;
 }
 footer#colophon h4{
   /* color: #fff; */
   text-transform: uppercase;
-  font-size: 1.2rem;
-  font-weight: bold;
-  font-family: 'doctor_jekyll_nfregular' !important;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--fontFamily) !important;
 }
 #footer_sections .wrapper{
   display: grid;
@@ -434,6 +438,15 @@ footer .social_wrapper ul li{
 #menu-item-215 > a:hover{
   cursor:auto;
 }
+.btn-group-lg>.btn, .btn-lg {
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0rem !important;
+}
+.btn {
+border-radius: 0rem !important;
+}
 
 /** RESPONSIVE **/
 @media screen and (min-width: 1441px){
@@ -492,16 +505,27 @@ footer .social_wrapper ul li{
   #prodotti .wrapper{
     grid-template-columns: repeat(5,1fr);
   }
+  #prodotti h2 {
+    margin: 2rem 0 3rem;
+    font-weight: 600;
+  }
+
   #collezioni .cat_wrapper{
     grid-template-columns: repeat(3,1fr);
   }
   footer#colophon{
     padding: 5rem 0;
     line-height: 2;
+    background: #E4E4E4;
+    color: #333;
+    padding: 2rem 0;
   }
   #footer_sections .wrapper{
     grid-template-columns: repeat(4,1fr);
     grid-gap: 1rem;
+  }
+  .site-footer h1, .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5, .site-footer h6, .site-footer .widget .widget-title, .site-footer .widget .widgettitle {
+   color: #222;
   }
 }
 /* Landscape */

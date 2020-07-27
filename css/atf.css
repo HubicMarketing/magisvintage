@@ -1,16 +1,26 @@
+:root {
+  --fontFamily: font-family: 'Poppins', sans-serif;
+  --linkColor: color: #8C8C8C;
+}
+body {
+  font-size: 1rem;
+  text-align: left;
+  background-color: #fff;
+}
 h1,h2,h3,h4,h5,h6,a{
     font-weight:bold;
     font-family: 'doctor_jekyll_nfregular' !important;
     font-family: Arial, Helvetica, sans-serif !important;
 }
-h1{
-  /* letter-spacing:1px !important; */
+h1, h2, h3, h4, h5, h6, .wc-block-grid__product-title{
+  color: #222;
 }
 #top_bar a,
 .main-navigation ul.menu li a,
 .home section > h2{
-  font-family: 'doctor_jekyll_nfregular' !important;
+  /* font-family: 'doctor_jekyll_nfregular' !important; */
   /* font-family: Arial, Helvetica, sans-serif !important; */
+  font-family: var(--fontFamily) !important;
 }
 #top_bar a:hover{
   color:red;
@@ -84,8 +94,7 @@ a{
     display: grid;
     align-items: center;
     justify-content: center;
-    /* grid-gap: 2rem; */
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #000;
 }
 #main_content .wrapper{
@@ -160,6 +169,9 @@ a{
     text-transform: uppercase;
     font-weight: bold !important;
     font-size: 3rem !important;
+}
+#top_bar a, .main-navigation ul.menu li a, .home section>h2 {
+  font-family: var(--fontFamily) !important;
 }
 
 /** RESPONSIVE **/
@@ -251,8 +263,8 @@ a{
   }
   .storefront-primary-navigation > div a{
     color: #fff !important;
-    padding: 1rem !important;
-        font-size: 1.4rem;
+    padding: .5rem !important;
+    font-size: 1rem;
   }
   .main-navigation ul.menu ul a{
     padding:0.5rem 1rem !important;
@@ -262,9 +274,15 @@ a{
     outline:none;
     background:#1d1b26 !important;
   }
+  ul.menu li a:hover, ul.menu li a:focus {
+    color: #222;
+  }
   .main-navigation ul.menu a:hover{
     background:#fff !important;
     color:#000 !important;
+  }
+  .main-navigation ul li a, .site-title a, ul.menu li a, .site-branding h1 a, button.menu-toggle, button.menu-toggle:hover, .handheld-navigation .dropdown-toggle {
+    color: var(--linkColor);
   }
   #slideshow{
     position:relative;

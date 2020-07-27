@@ -16,27 +16,8 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link rel="preload" href="<?php echo get_stylesheet_directory_uri(); ?>/css/atf.css" as="style" onload="this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/atf.css"></noscript>
-
-<!-- [1] -->
-<link rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin />
-
-<!-- [2] -->
-<link rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" />
-
-<!-- [3] -->
-<link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      media="print" onload="this.media='all'" />
-
-<!-- [4] -->
-<noscript>
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" />
-</noscript>
+<link rel="preload" href="<?php echo get_stylesheet_directory_uri(); ?>/css/doctor_jekyll_nf.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/doctor_jekyll_nf.css"></noscript>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <?php wp_head(); ?>
