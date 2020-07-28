@@ -516,9 +516,7 @@ border-radius: 0rem !important;
   .contatti .blocco_container {
         align-items: flex-start;
   }
-  /* #video{
-        padding: 4rem 0;
-  } */
+ 
   .kipekee .blocco_container{
     grid-template-columns: repeat(4, 1fr);
   }
