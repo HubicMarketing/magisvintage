@@ -55,10 +55,10 @@
   height: auto;
 }
 #prodotti .wrapper_images{
-  border-bottom:1px solid #000;
+  border-bottom:1px solid #222;
 }
 #prodotti figcaption h4{
-  color: #000;
+  color: #222;
   font-size: 1.2rem;
   font-weight: bold;
   margin: 1rem 0 0.5rem;
@@ -67,7 +67,7 @@
     display: block;
     width: 100%;
     margin: 0.5rem 0 0 0;
-    color: #000;
+    color: #222;
     font-weight: bold;
     font-size: 1.1rem;
 }
@@ -84,7 +84,7 @@
 /* #prodotti .carousel-control{
   top: 50%;
   transform: translateY(-50%);
-  color: #000;
+  color: #222;
   width: inherit;
 } */
 /* 
@@ -97,7 +97,7 @@
 .product_category_loop a{
     font-weight: normal;
     font-style: italic;
-    color: #000;
+    color: #222;
     font-size: 0.8rem;
 }
 
@@ -127,7 +127,7 @@
 #collezioni figure:hover a.btn {
   background:#fff;
   border-color:transparent;
-  color:#000;
+  color:#222;
 }
 #collezioni figure:hover .cover{
     background: rgba(0, 0, 0, 0.2);
@@ -164,7 +164,7 @@
 }
 #kipekee h2{
     margin: 0;
-    color: #000;
+    color: #222;
     font-size: 6rem;
     text-transform: uppercase;
     font-weight: 600;
@@ -191,7 +191,7 @@
 }
 .blocco_container .blocco_wrapper {
     padding: 2rem 3rem;
-    color: #000;
+    color: #222;
 }
 .blocco_container .img_wrapper{
     background-size: cover;
@@ -336,16 +336,22 @@ footer .social_wrapper ul li{
 }
 #back2Top:hover {
     background-color: #DDF;
-    color: #000;
+    color: #222;
 }
 
 .page-template-template-fullwidth #primary, .page-template-template-fullwidth #main{
   margin-bottom:0;
 }
-
 #form{
-  padding: 5rem 0;
+  padding: 5rem;
   background: #1d1b26;
+}
+.contatti #form{
+    padding:0;
+}
+.blocco_container .blocco_wrapper.form_wrapper{
+  background: #1d1b26;
+  padding: 4rem 3rem 2rem;
 }
 #form .container{
     display: grid;
@@ -359,6 +365,9 @@ footer .social_wrapper ul li{
   margin:0;
   color: #fff;
 }
+.contatti #form h3{
+  font-size: 2rem;
+}
 
 #form form p{
   margin-bottom:0;
@@ -370,6 +379,9 @@ footer .social_wrapper ul li{
     box-shadow: none;
     outline:none;
 }
+#form form textarea{
+  height:150px;
+} 
 #form .wpcf7-acceptance .wpcf7-list-item{
   margin:0;
 }
@@ -379,6 +391,7 @@ footer .social_wrapper ul li{
   line-height: 1.4;
   background: none;
   color: #fff;
+  margin-bottom: 1rem;
 }
 #form .wpcf7-acceptance label a{
   color: #fff;
@@ -388,6 +401,8 @@ footer .social_wrapper ul li{
 #form .wpcf7-acceptance input[type="checkbox"]{
     width: initial;
     margin: 0 0.5rem 0 0;
+    position: relative;
+    top: 2px;
 }
 #form input[type="submit"]{
   text-transform:uppercase;
@@ -405,33 +420,33 @@ footer .social_wrapper ul li{
 .fullWidth h2{
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 2rem;
-  color:#000;
+  font-size:1.5rem;
+  color:#222;
 }
 
 .fullWidth h3{
   /* font-weight: bold; */
   text-transform: uppercase;
   font-size: 2rem;
-  color:#000;
+  color:#222;
 }
 .fullWidth.kipekee .blocco_container{
   grid-gap: 2rem 0;
 }
-.fullWidth .blocco_wrapper span{
-    font-size: 3rem;
-    font-family: 'doctor_jekyll_nfregular';
+.fullWidth.kipekee .blocco_wrapper span{
+    font-size: 2rem;
+    /* font-family: 'doctor_jekyll_nfregular'; */
     border: 1px solid;
     border-radius: 50%;
     width: 60px;
     height: 60px;
     display: block;
     text-align: center;
-    line-height: 60px;
+    line-height: 58px;
     margin-bottom: 1rem;
 }
 .contatti .blocco_wrapper a{
-    color: #000;
+    color: #222;
     font-weight: normal;
 }
 
@@ -455,9 +470,12 @@ border-radius: 0rem !important;
 }
 @media screen and (max-width: 1440px) and (min-width: 768px){
   #video{
-      padding: 0rem 15rem;
+      padding: 0rem;
   }
-
+  .contatti #form h3{
+    text-transform:none;
+    font-weight:normal;
+  }
 }
 @media screen and (min-width: 1200px){
 
@@ -475,25 +493,31 @@ border-radius: 0rem !important;
 
 }
 @media screen and (min-width: 768px){
+  .page-id-2 #content > .col-full{
+    padding-right:0;
+  }
   #form input[type="submit"]{
     padding: 1rem 2rem;
   }
   #form .container{
-    grid-template-columns: repeat(1, 2fr 3fr);
+    grid-template-columns: repeat(1,2fr 3fr);
+  }
+  .contatti #form .container{
+    grid-template-columns: repeat(1, 1fr);
   }
     .blocco_container .blocco_wrapper {
     padding: 2rem 3rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.4;
   }
   .blocco_container {
     grid-template-columns: repeat(2, 1fr);
   }
   .contatti .blocco_container {
-    grid-template-columns: repeat(1, 1fr);
+        align-items: flex-start;
   }
-    #video{
-        padding: 4rem 20rem;
+  #video{
+        padding: 4rem 0;
   }
   .kipekee .blocco_container{
     grid-template-columns: repeat(4, 1fr);
@@ -526,6 +550,11 @@ border-radius: 0rem !important;
   }
   .site-footer h1, .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5, .site-footer h6, .site-footer .widget .widget-title, .site-footer .widget .widgettitle {
    color: #222;
+  }
+  form .wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem 0.5rem;
   }
 }
 /* Landscape */
@@ -570,6 +599,12 @@ and (-webkit-min-device-pixel-ratio: 2){
     grid-template-columns: repeat(1,1fr);
   }
   #form .container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* .contatti #form .container{
+    grid-template-columns: repeat(1, 2fr 3fr);
+  } */
+  .contatti .blocco_container {
     grid-template-columns: repeat(1, 1fr);
   }
 }

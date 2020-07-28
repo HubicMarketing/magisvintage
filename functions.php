@@ -303,7 +303,7 @@ add_action('init','manage_storefront_sections');
 
 add_action( 'storefront_before_footer', 'add_before_footer_sections', 0 );
 function add_before_footer_sections(){
-  if(is_page(array(183, 64, 185, 66, 191, 193, 62, 197, 199, 2, 51, 53))) { // chi siamo
+  if(is_page(array(183, 64, 185, 66, 191, 193, 62, 197, 199))) { // contatti 2, 51, 53
     include(dirname(__FILE__)."/include/page/form.php");
   }
   if(is_page(array(2, 51, 53))){
