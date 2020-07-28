@@ -16,13 +16,12 @@
     </div><!--top_bar__wrapper-->
 
     <div class="top_bar__wrapper">
-    
+    <ul><li><a id="openSearchMenu">Cerca</a></li></ul>
         <?php 
             wp_nav_menu( array( 
                 'theme_location' => 'menu-admin', 
                 'menu_id' => 'menu-admin'
                 ) );
         ?>
-        <ul><li><a id="openSearchMenu">Cerca</a></li></ul>
     </div><!--top_bar__wrapper-->
 </section>
