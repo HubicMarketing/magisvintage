@@ -1,4 +1,11 @@
-window.onload = function() {
+window.onload = function() {    
+
+    // change grid in archive if products are displayed
+    const productArchive = document.querySelector('.tax-product_cat .products li.product.type-product');
+    if(productArchive != null) {
+        const productList = productArchive.parentElement;
+        productList.classList.add('product_grid');
+    }
 
     // LAZY LOADING
     if ('loading' in HTMLImageElement.prototype) {
@@ -30,7 +37,7 @@ window.onload = function() {
     });
     
     // ON SCROLL FIXE LOGO TO TOP (MOBILE)
-    var main_menu = jQuery(".storefront-primary-navigation > div");
+    var main_menu = jQuery("#masthead");
     var main_menu_top = main_menu.offset().top;
     jQuery(window).scroll(function() {
         if (jQuery(this).scrollTop() > main_menu_top) {
@@ -59,12 +66,14 @@ window.onload = function() {
 
     const openSearchMenu = () => {
         searchMenu.style.width = "50%";
+        searchMenu.classList.add('openSearch');
     };    
     const openSearchBtn = document.querySelector('#openSearchMenu');
     openSearchBtn.addEventListener('click', openSearchMenu);
 
     const closeSearchMenu = () => {
         searchMenu.style.width = "0";
+        searchMenu.classList.remove('openSearch');
     };
     const closeSearchBtn = document.querySelector('#closebtn');
     closeSearchBtn.addEventListener('click', closeSearchMenu);

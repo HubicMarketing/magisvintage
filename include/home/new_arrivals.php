@@ -1,10 +1,5 @@
-<?php $mylocale = get_bloginfo('language'); ?>
-<section id="prodotti">
-<?php if($mylocale == 'it-IT') { ?>
-    <h2>Scopri i nostri Lotti</h2>
-<?php } else { ?>
-    <h2>Our latest products</h2>
-<?php } ?>
+<section id="prodotti" class="blacked">
+<h2><?php _e('Ultimi arrivi','my-child-theme'); ?></h2>
 <div class="wrapper">
 <?php
 $index = 0; //counter set-up

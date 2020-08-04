@@ -6,11 +6,9 @@ $post_title = $post ->post_title;
 $post_content = $post ->post_content;
 $url = wp_get_attachment_url( get_post_thumbnail_id($post_id) ); ?>
 
-<section id="main_content">
-    <div class="wrapper img_wrapper">
-      <img class="translated trans" alt="<?php bloginfo('name'); ?>" src="<?php echo $url; ?>" />
-    </div><!--wrapper-->
-    <div class="wrapper">
+<section id="main_content" class="blacked">
+    <h2>Magis Vintage</h2>
+    <div class="container wrapper">
         <?php echo $post_content; ?>
-    </div><!--wrapper-->
+    </div><!--container-->
 </section>

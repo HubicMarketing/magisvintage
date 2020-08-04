@@ -6,16 +6,8 @@ $post_content = $post ->post_content;
 $url = wp_get_attachment_url( get_post_thumbnail_id($post_id) ); ?>
 
 <section id="<?php echo $post_name; ?>" class="about fullWidth">
+<?php include(dirname(__FILE__)."/fullWidthTopContent/topContent.php"); ?>
 <div class="container">
-    <h1><?php echo $post_title; ?></h1>
-
-    <div class="blocco_container">
-        <div class="blocco_wrapper">
-            <?php echo $post_content; ?>
-        </div><!--blocco_wrapper-->
-        <div class="img_wrapper" style="background-image:url('<?php echo $url; ?>');"></div>
-    </div><!--blocco_container-->
-
 <?php 
 $blocco_contenuto = 'blocco';
 if( have_rows($blocco_contenuto) ): 
@@ -55,6 +47,5 @@ if( have_rows($blocco_contenuto) ):
  endwhile; ?>
 </div>
 <?php endif; ?>
-
 </div><!--container-->
 </section>

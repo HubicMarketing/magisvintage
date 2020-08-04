@@ -17,7 +17,6 @@ $immagine_alt = get_post_meta( $immagine_id, '_wp_attachment_image_alt', true); 
 
 </div>
 <h1 class="translated">
-<strong>Magis Vintage</strong>
-<br/><span>Abbigliamento Second Hand e Vintage Retrò Style</span></h1>
+Magis Vintage<br/><span><?php _e('Abbigliamento Second Hand e Vintage Retrò Style','my-child-theme'); ?></span></h1>
 </section>
 <?php endif; ?>

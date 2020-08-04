@@ -27,7 +27,7 @@
 			do_action( 'storefront_footer' );
 			?>
 
-<?php if(!is_product_category()) { ?>
+<?php if(!is_product_category() && !is_page_template('template-fullwidth.php')) { ?>
 		</div><!-- .col-full -->
 <?php } ?>
 	</footer><!-- #colophon -->
@@ -52,14 +52,34 @@
 			ride: 'carousel',
 			wrap: true,
 		});
-		jQuery('#prodotti .carousel').carousel({
-			interval: 6000,
-			keyboard: true,
-			pause: false,
-			ride: 'carousel',
-			wrap: true,
-		});
+		// jQuery('#prodotti .carousel').carousel({
+		// 	interval: 6000,
+		// 	keyboard: true,
+		// 	pause: false,
+		// 	ride: 'carousel',
+		// 	wrap: true,
+		// });
 		jQuery('.carousel .carousel-item:first-child').addClass('active');
+	</script>
+<?php } ?>
+<?php if(is_product()) { ?>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.easing.1.3.js"></script>
+	<!-- the jScrollPane script -->
+	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.contentcarousel.js"></script>
+	<script type="text/javascript">
+		jQuery('#ca-container').contentcarousel({
+			// speed for the sliding animation
+			sliderSpeed		: 500,
+			// easing for the sliding animation
+			sliderEasing	: 'easeOutExpo',
+			// speed for the item animation (open / close)
+			itemSpeed		: 500,
+			// easing for the item animation (open / close)
+			itemEasing		: 'easeOutExpo',
+			// number of items to scroll at a time
+			scroll			: 1	
+		});
 	</script>
 <?php } ?>
 </body>
